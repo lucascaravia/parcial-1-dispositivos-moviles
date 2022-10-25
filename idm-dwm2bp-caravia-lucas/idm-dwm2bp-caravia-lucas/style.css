@@ -1,0 +1,545 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Merriweather:wght@700&family=Poppins:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+/*responsive*/
+@media screen and (max-width: 320px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+.contenedor footer header body .fullPageMenu .blog-post .blog-post__img {
+  width: 100%;
+}
+}
+@media screen and (max-width: 992px) {
+  .contenedor footer header body .blog-post {
+    width: 100%;
+  }
+}
+@media screen and(max-width:1068px){
+  .blog-post{
+ 
+      max-width:80 rem;
+  }
+  .blog-post__img{
+ 
+      min-width:30rem;
+      max-width:30rem;
+    }
+  }
+@media screen and(max-width:868px){
+  .blog-post{
+   max-width: 70rem;
+    }
+}
+
+* {
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+
+
+h1{
+    display: flex ;
+    justify-content: center; 
+
+}
+
+h2{
+    display: flex ;
+    justify-content: center;
+    font-family: "Pathway Gothic One" ;
+    color: rgb(34, 152, 107);
+
+    text-shadow: 2px 5px 7px rgba(4, 4, 4, 0.202);
+    font-size: 35px;
+}
+h3{
+    display: flex ;
+    justify-content: center;
+   
+    font-family: 'Poppins', sans-serif;
+    color: rgb(34, 152, 107);
+}
+.container{
+    margin: 0;
+    padding: 7%; 
+    margin:0,0,-30,30;
+    box-shadow: 2px 6px 7px rgba(0,0,0,0.33);
+    font-size: 16px;
+
+}
+
+.centrar{
+
+    display: flex ;
+    justify-content: center; 
+
+}
+
+.centrar ul{
+    list-style:circle;
+    
+}
+.centrar li {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.header-image {
+    margin-bottom: 2%;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+
+    padding: 2%;
+}
+.banner{
+    height: auto;
+    vertical-align: middle;
+    margin-top: 2%;
+    box-sizing: inherit;
+    width: 1200px;
+    background-image: url(https://fundadeps.org/wp-content/uploads/2021/11/Plan-Estrategico-Salud-Medio-Ambiente.jpg);
+
+}
+.imagen1{
+    
+    width: 35%;
+    height: 35% ;
+    margin-top:  5%; 
+    margin-bottom: 3%; 
+    margin-left: 32%;
+    box-shadow: 12px 1px 18px 0px rgba(0,0,0,0.75);
+}
+
+/* nav */
+.nav ul {
+    display:flex;
+  justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: rgb(30, 174, 66);
+    
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: rgba(98, 98, 98, 0.622);
+}
+.tarjetero{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 330px ;
+    grid-template-areas: "image" "text" ;
+  
+    border-radius: 18px;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+  
+  
+    transition: 0.5s ease;
+    cursor: pointer;
+  
+    width: 300px;
+    margin-top: 5%; 
+    margin-left: 3%;
+    margin-right: 3%;
+  
+    }
+
+    .card:hover {
+      transform: scale(1.10);
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+      color: rgb(255, 255, 255);
+      background: rgba(0, 0, 0, 1);
+      
+    }
+
+.card-image-1 {
+    grid-area: image;
+    background-image: url("https://www.homecenter.com.co/static/landing/guiasdecompra/Guias_de_compra_2/img/como-separar-basuras/como-separar-basuras-ca1.jpg");
+    width: 300px;
+    height: 210px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+
+  }
+  .card-image-2 {
+    grid-area: image;
+    background-image: url("https://bebesonline.es/blog/wp-content/uploads/2015/03/apagar-la-luz-nene.jpg");
+    width: 300px;
+    height: 210px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+
+  }
+  .card-image-3 {
+    grid-area: image;
+    background-image: url("https://img.freepik.com/vetores-premium/tomada-de-energia-classica-com-design-plano_23-2147972438.jpg?w=2000");
+    width: 300px;
+    height: 210px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+
+  }
+  .card-image-4 {
+    grid-area: image;
+    background-image: url("https://grupolofer.com.ar/wp-content/uploads/2016/11/grifo_ahorroagua__0.jpg");
+    width: 300px;
+    height: 210px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+
+  }
+  .card-image-5 {
+    grid-area: image;
+    background-image: url("https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2019/07/03/5fa531ee12b2f.jpeg");
+    width: 300px;
+    height: 210px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+
+  }
+  .card-image-6 {
+    grid-area: image;
+    background-image: url("https://www.diariamenteali.com/medias/frutas-y-verduras-que-te-dan-energ-a-por-la-manana-1900Wx500H?context=bWFzdGVyfGltYWdlc3wyMTg0Nzd8aW1hZ2UvanBlZ3xoYjMvaDg5LzkwNzY2NjEzNTQ1MjYvZnJ1dGFzLXktdmVyZHVyYXMtcXVlLXRlLWRhbi1lbmVyZ8OtYS1wb3ItbGEtbWFuYW5hXzE5MDBXeDUwMEh8NzQxMjkyMzZhMmVmZDFkNzdjODEzYWMxYTRkMzk1NGU4MzZiZDhkNjFjYzI2NmU1MDI1NmIwNDczZDU5ZWVjNA");
+    width: 300px;
+    height: 210px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+
+  }
+
+
+  .card-text {
+    grid-area: text;
+    margin: 25px;
+  }
+  .card-text .date {
+    color: rgb(255, 7, 110);
+    font-size:13px;
+  }
+  .card-text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .card-text h2 {
+    margin-top:0px;
+    font-size:28px;
+  }
+  
+
+
+
+/* form */
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	
+
+}
+
+#form-div {
+    background: linear-gradient(to right, #dce35b, #45b649);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	left: 50%;
+  margin-top:10%;
+  margin-bottom:7%;
+	margin-left: 3%;
+ border-radius: 7px;
+  -webkit-border-radius: 7px;
+  box-shadow: 2px 6px 7px rgba(0,0,0,0.85);
+}
+
+.feedback-input {
+	color:#0493bd;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	border-radius: 0;
+	vertical-align: middle;
+	background-color: #ecf0f1;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid #bdc3c7;
+}
+
+.feedback-input:focus{
+	background: #ecf0f1;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#000000;
+	border:#a51c1cd1 solid 3px;
+}
+
+#name{
+	background-image: url(http://wpplus.me/wp-content/uploads/2013/08/head-32x32.png);
+	background-size: 32px 32px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://wpplus.me/wp-content/uploads/2013/08/head-32x32.png);
+	background-size: 32px 32px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	background-image: url(http://wpplus.me/wp-content/uploads/2013/08/envelope-32x32.png);
+	background-size: 32px 32px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://wpplus.me/wp-content/uploads/2013/08/envelope-32x32.png);
+	background-size: 32px 32px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://wpplus.me/wp-content/uploads/2013/08/pencil-32x32.png);
+	background-size: 32px 32px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	line-height: 150%;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-bottom{
+	font-family: webfontbold, Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: rgba(9,179,116,0.9);
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+}
+
+#button-bottom:hover{
+	background-color: rgba(230, 126, 34,0.9);
+	color: rgba(52, 73, 94,0.9);
+}
+	
+.submit:hover{
+	color: rgba(149, 165, 166,0.9);
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* footer*/
+.container2{
+    max-width:1170px;
+    margin:auto;
+  }
+  .row{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .footer ul{
+    list-style: none;
+  }
+  
+  .footer{ 
+     background-color:#24262b;
+     padding:70px 0;
+  }
+  
+  .footer-col{  
+    width:25%;
+    padding:0 15px;
+  }
+  
+  .footer-col h4{
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+  }
+  .footer-col h4::before{
+      content: '';
+      position: absolute;
+      left:0;
+      bottom: -10px;
+      background-color: #e91e63;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+      margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+  }
+  .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+      color: #24262b;
+      background-color: #ffffff;
+  }
+  
+  
